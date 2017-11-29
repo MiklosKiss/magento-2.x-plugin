@@ -1,0 +1,32 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="seon" translate="label" sortOrder="200">
+            <label>SEON Extensions</label>
+        </tab>
+        <section id="seon_administrator" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>SEON API</label>
+            <tab>seon</tab>
+            <resource>Seon_Fraud::settings</resource>
+            <group id="settings" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Settings</label>
+                <field id="keyz" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API Key:</label>
+                    <comment>Add SEON API key</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled:</label>
+                    <comment>SEON Fraud features enabled</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="agent" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Javascript Agent:</label>
+                    <comment>Javascript Agent enabled</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid"
+                 type="Magento\Sales\Model\ResourceModel\Grid">
+        <arguments>
+            <argument name="columns" xsi:type="array">
+                <item name="is_fraud" xsi:type="string">sales_order.is_fraud</item>
+                <item name="fraud_score" xsi:type="string">sales_order.fraud_score</item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+        <menu>
+          <add id="Seon_Fraud::seon" title="Seon Extensions" translate="title" module="Seon_Fraud" parent="Magento_Backend::system" sortOrder="50" dependsOnModule="Seon_Fraud" resource="Seon_Fraud::seon"/>
+          <add id="Seon_Fraud::seon_seonapi" title="Seon API" translate="title" module="Seon_Fraud" parent="Seon_Fraud::seon" sortOrder="10" dependsOnModule="Seon_Fraud" action="adminhtml/system_config/edit/section/seon" resource="Seon_Fraud::seon"/>
+        </menu>
+    </config>

@@ -1,0 +1,4 @@
+<section class="admin__page-section custom-tab-content">
+<?php $_order = $block->getOrder(); ?>
+<iframe id="seon-transaction" src="https://admin.seon.io/transactions/<?php echo $_order->getData('seon_transaction_id')?>/?embed=1" width="100%" height="800px" style="width:100%"></iframe>
+</section>
